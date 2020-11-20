@@ -9,65 +9,33 @@
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="../assets/vendor/owl.carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/font/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
 
-  <!-- Core -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style-comp.css">
 
   <!-- Vendor JS -->
-  <script src="../assets/vendor/jquery.min.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="../assets/vendor/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
   <script src="../assets/vendor/trackpademulator/trackpademulator.min.js"></script>
+
 
 </head>
 
 <body>
 
+
   <nav class="ix-navbar">
-    <div class="ix-container">
-      <div class="ix-navbar-brand">
-        <a href="#"><img src="../assets/img/logo.png" alt=""></a>
-      </div>
-      <div class="ix-navbar-menu">
-        <ul class="satu">
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="my-course.html">My Course</a></li>
-          <li><a href="my-drive.html">My Files</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-        </ul>
-        <ul class="dua">
-          <li class="ix-role-status">
-            <div class="btn btn-red btn-1x btn-round cursor-na">Student</div>
-          </li>
-          <li><a href="#"><i class="mdi mdi-centered mdi-message-reply"></i></a></li>
-          <li><a href="#"><i class="mdi mdi-centered mdi-bell"></i></a></li>
-          <li class="ix-navbar-dropdown">
-            <a><span><img src="../assets/img/pp.jpg" class="img-wrap" alt=""></span></a>
-            <ul>
-              <li>
-                <div>
-                  <b>Adnan Rahmadi</b>
-                  <p>FIK / DKV <br> NIM. 1601174232</p>
-                </div>
-              </li>
-              <li><a href="profil.html"><i class="mdi mdi-account"></i> Profile</a></li>
-              <li><a href="grades.html"><i class="mdi mdi-star"></i> Grades</a></li>
-              <li><a href="setting.html"><i class="mdi mdi-cog"></i> Setting</a></li>
-              <li class="divider"></li>
-              <li><a href="../login.html"><i class="mdi mdi-logout-variant"></i> Logout</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
   </nav>
+
 
   <main>
     <div class="ix-container">
 
-      <div class="ix-left">
+      <section class="ix-left">
         <div class="ix-featured-container">
           <div class="owl-carousel owl-theme ix-featured">
             <div class="item">
@@ -105,14 +73,20 @@
             </div>
           </div>
         </div>
-        <ul class="ix-dashboard-menu text-center">
-          <li><a href="#" class="btn btn-block btn-6x btn-red">About CeLOE</a></li>
-          <li><a href="#" class="btn btn-block btn-6x btn-purple">F.A.Q</a></li>
-          <li><a href="#" class="btn btn-block btn-6x btn-cyan">Helpdesk</a></li>
-          <li><a data-toggle="modal" data-target="#myModal" class="btn btn-block btn-6x btn-default">Customize Block</a></li>
-        </ul>
-        <section>
-          <h4>Knowledge Base</h4>
+
+        <div class="ix-dashboard-menu ix-list-none">
+          <ul>
+            <li><a href="#" class="btn btn-block btn-6x btn-red">About CeLOE</a></li>
+            <li><a href="#" class="btn btn-block btn-6x btn-purple">F.A.Q</a></li>
+            <li><a href="#" class="btn btn-block btn-6x btn-cyan">Helpdesk</a></li>
+            <li><a data-toggle="modal" data-target="#myModal" class="btn btn-block btn-6x btn-default">Customize Block</a></li>
+          </ul>
+        </div>
+
+        <div class="ix-section margin-v4x marbot-0x">
+          <div class="ix-section-title">
+            <h4>Knowledge Base</h4>
+          </div>
           <div class="ix-grid-container ix-grid-2">
             <div class="ix-grid-item">
               <div class="alert alert-secondary margin-reset">
@@ -142,96 +116,71 @@
                 </ul>
               </div>
             </div>
-            <div class="ix-grid-item">
-              <div class="alert alert-secondary margin-reset">
-                <div class="alert-heading href-uline">
-                  <i class="mdi mdi-reset top-3x mdi-folder-open"></i> Settings <sup>(4)</sup>
-                  <a href="#" class="pull-right"><small>See more...</small></a>
-                </div>
-                <ul class="ix-list-border ix-list-icon-ul half-bold kb-list">
-                  <li><i class="mdi mdi-file-document-outline"></i></li>
-                  <li><a href="#"><b>Preferensi Akun</b></a></li>
-                  <li><a href="#"><b>Notifikasi</b></a></li>
-                  <li><a href="#"><b>Skema Warna</b></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="ix-grid-item">
-              <div class="alert alert-secondary margin-reset">
-                <div class="alert-heading href-uline">
-                  <i class="mdi mdi-reset top-3x mdi-folder-open"></i> Account <sup>(6)</sup>
-                  <a href="#" class="pull-right"><small>See more...</small></a>
-                </div>
-                <ul class="ix-list-border ix-list-icon-ul half-bold kb-list">
-                  <li><i class="mdi mdi-file-document-outline"></i></li>
-                  <li><a href="#"><b>Kontak / Pertemanan</b></a></li>
-                  <li><a href="#"><b>Fitur Pesan</b></a></li>
-                  <li><a href="#"><b>Penilaian Mata Kuliah</b></a></li>
-                </ul>
-              </div>
-            </div>
           </div>
-        </section>
-        <section>
-          <h4>My Course</h4>
-          <div class="ix-grid-container ix-grid-3 img-hover dashboard-course">
+        </div>
+
+        <div class="ix-section margin-v4x marbot-0x">
+          <div class="ix-section-title">
+            <h4>My Course</h4>
+          </div>
+          <div class="ix-grid-container ix-grid-3 img-hover my-course-grid">
             <div class="ix-grid-item">
-              <ul class="ix-list-none-ul">
+              <ul class="ix-list-none">
                 <li><a href="#"><img src="../assets/img/material-design-wp/13.png" alt=""></a></li>
                 <li><a href="#"><b>Manajemen Proyek MD-41-CD [FAA]</b></a></li>
                 <li>Wed, 12:30 - 14:30</li>
               </ul>
             </div>
             <div class="ix-grid-item">
-              <ul class="ix-list-none-ul">
+              <ul class="ix-list-none">
                 <li><a href="#"><img src="../assets/img/material-design-wp/15.png" alt=""></a></li>
                 <li><a href="#"><b>Semiotika dan Bahasa Visual MD-42-E [MOT]</b></a></li>
                 <li>Wed, 12:30 - 14:30</li>
               </ul>
             </div>
             <div class="ix-grid-item">
-              <ul class="ix-list-none-ul">
+              <ul class="ix-list-none">
                 <li><a href="#"><img src="../assets/img/material-design-wp/19.png" alt=""></a></li>
                 <li><a href="#"><b>Digital Business MD-42-E [YAM]</b></a></li>
                 <li>Wed, 12:30 - 14:30</li>
               </ul>
             </div>
             <div class="ix-grid-item">
-              <ul class="ix-list-none-ul">
+              <ul class="ix-list-none">
                 <li><a href="#"><img src="../assets/img/material-design-wp/17.png" alt=""></a></li>
                 <li><a href="#"><b>Seminar MD-41-CD [DTW]</b></a></li>
                 <li>Wed, 12:30 - 14:30</li>
               </ul>
             </div>
             <div class="ix-grid-item">
-              <ul class="ix-list-none-ul">
+              <ul class="ix-list-none">
                 <li><a href="#"><img src="../assets/img/material-design-wp/16.png" alt=""></a></li>
                 <li><a href="#"><b>Manajemen Desain 5 MD-41-C [FAA]</b></a></li>
                 <li>Wed, 12:30 - 14:30</li>
               </ul>
             </div>
             <div class="ix-grid-item ix-more-grid">
-              <ul class="ix-list-none-ul">
+              <ul class="ix-list-none">
                 <li><a href="#"><img src="../assets/img/material-design-wp/12.png" alt=""><i class="mdi mdi-book-plus-multiple"></i></a></li>
                 <li><a href="#"><b>Show All Courses</b></a></li>
                 <li></li>
               </ul>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <div class="ix-right">
-        <section>
+      <section class="ix-right colsx">
+        <div class="ix-section">
           <div class="alert alert-green alert-outline ix-online-status">
-            <ul class="ix-list-none-ul">
+            <ul class="ix-list-none">
               <li><small>Online Contacts</small><br><b>0</b></li>
               <li><small>Academic Year</small><br><b>20/21/1</b></li>
               <li><small>Online Users</small><br><b>1,982</b></li>
             </ul>
           </div>
           <div class="alert alert-secondary alert-outline ix-online-status">
-            <ul class="ix-list-none-ul">
+            <ul class="ix-list-none">
               <li><small>Server Time</small><br><b>Thu 22:41:11</b></li>
               <li><small>You</small><br><b>Thu 23:41:11</b></li>
             </ul>
@@ -239,9 +188,12 @@
           <div class="alert alert-red alert-outline marbot-0x">
             <b>Next class in 4d 5h 10m 32s</b>
           </div>
-        </section>
-        <section>
-          <h5>Tasks Reminder</h5>
+        </div>
+        
+        <div class="ix-section margin-v4x marbot-0x">
+          <div class="ix-section-title">
+            <h5>Tasks Reminder</h5>
+          </div>
           <ul class="ix-list-border ix-list-icon-ul half-bold task-list">
             <li><i class="mdi mdi-format-list-checks"></i></li>
             <li><a href="#"><b>Tugas Perkuliahan Ke-6</b> <br> <small>Manajemen Proyek MD-41-C_D [FAA] <br> Sunday, October 18, 2020</small></a></li>
@@ -249,9 +201,12 @@
             <li><a href="#"><b>Merangkum Video Si Anak Singkong</b> <br> <small>Kewirausahaan DKV-GAB5 [ZKN] <br> Tuesday, October 20, 2020</small></a></li>
             <li class="show-all"><a href="#">Show All Tasks (7)</a></li>
           </ul>
-        </section>
-        <section>
-          <h5>Course Access History</h5>
+        </div>
+        
+        <div class="ix-section margin-v4x marbot-0x">
+          <div class="ix-section-title">
+            <h5>Course Access History</h5>
+          </div>
           <ul class="ix-list-border ix-list-icon-ul half-bold mk-history">
             <li><i class="mdi mdi-book-multiple-outline"></i></li>
             <li><a href="#"><b>Manajemen Proyek MD-41-C_D [FAA]</b> <br> <small>3 mins ago</small></a></li>
@@ -259,62 +214,37 @@
             <li><a href="#"><b>Seminar MD-41-C_D [DTW]</b> <br> <small>92 mins ago</small></a></li>
             <li><a href="#"><b>Digital Business MD-42-E [YAM]</b> <br> <small>2 hours ago</small></a></li>
           </ul>
-        </section>
-        <section>
-          <h5>CeLOE News</h5>
-          <div class="alert alert-orange">
+        </div>
+        
+        <div class="ix-section margin-v4x marbot-0x">
+          <div class="ix-section-title">
+            <h5>Tasks Reminder</h5>
+          </div>
+          <div class="alert alert-orange marbot-0x">
             No data.
           </div>
-        </section>
-      </div>
-
-      <div class="clear"></div>
+        </div>
+      </section>
 
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="copy-menu">
-      <a href="#">About us</a>
-      <a href="#">F.A.Q</a>
-      <a href="#">Terms</a>
-      <a href="#">Policy</a>
-      <a href="#">Press Kit</a>
-      <a href="#">Helpdesk</a>
-      <div class="copyyear">
-        Center for e-Learning &amp; Open Education Telkom University &copy; 2020
-      </div>
-    </div>
+
+  <footer class="ix-footer">
   </footer>
 
-  <!-- Modal -->
-  <div class="modal fade ix-customize-block" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Customize Block</h4>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-3x btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-3x btn-solid btn-solid-red">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Overlay -->
   <div class="bg-overlay1"></div>
 
+
+  <script src="part/part.js"></script>
   <script src="../assets/js/ixlab.js"></script>
   <script>
     $(document).ready(function () {
       var owl = $('.ix-featured');
       owl.owlCarousel({
-        margin: 2,
+        margin: 1,
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
@@ -323,6 +253,7 @@
       });
     });
   </script>
+
 
 </body>
 

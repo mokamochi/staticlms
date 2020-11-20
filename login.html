@@ -4,22 +4,24 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Login - CeLOE.</title>
+  <title>STEVEN UDIN - CeLOE.</title>
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="assets/vendor/owl.carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/font/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
 
-  <!-- Core -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-comp.css">
 
   <!-- Vendor JS -->
-  <script src="assets/vendor/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
   <script src="assets/vendor/trackpademulator/trackpademulator.min.js"></script>
+
 
 </head>
 
@@ -39,7 +41,7 @@
           <h4 style="margin:16px 0 22px">Login</h4>
         </div>
         <a href="mahasiswa/dashboard.html" class="btn-block btn-solid btn-solid-red text-center btn-6x margin-v2x"> <i class="mdi mdi-reset mdi-3x top-3x mdi-microsoft-office margin-h1x marlef-0x"></i> Connect with Office365 (Student)</a>
-        <a href="dosen/dashboard.html" class="btn-block btn-solid btn-solid-red text-center btn-6x margin-v2x"> <i class="mdi mdi-reset mdi-3x top-3x mdi-microsoft-office margin-h1x marlef-0x"></i> Connect with Office365 (Teacher)</a>
+        <a class="btn-block btn-solid btn-solid-red text-center btn-6x margin-v2x disabled" data-toggle="tooltip" data-placement="top" title="preview is only available to students now"> <i class="mdi mdi-reset mdi-3x top-3x mdi-microsoft-office margin-h1x marlef-0x"></i> Connect with Office365 (Teacher)</a>
         <br>
         <ul class="nav nav-tabs ix-flag" role="tablist">
           <li role="presentation" class="active"><a href="#how-login-id" data-toggle="tab"><img src="assets/img/ID.png" alt="" />IDN</a></li>
@@ -88,12 +90,13 @@
     </div>
   </div>
 
+
   <script src="assets/js/ixlab.js"></script>
   <script>
     $(document).ready(function () {
       var owl = $('.ix-featured');
       owl.owlCarousel({
-        margin: 2,
+        margin: 1,
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
@@ -102,7 +105,6 @@
       });
     });
   </script>
-
 </body>
 
 </html>
