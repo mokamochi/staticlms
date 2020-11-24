@@ -79,7 +79,9 @@ i .mdi,b .mdi,u .mdi,i.mdi,b.mdi,u.mdi{font-weight:normal!important;font-style:n
 .borad-2x{border-radius:12px!important}
 .borad-3x{border-radius:18px!important}
 .borad-4x{border-radius:20px!important}
+.lh-1x{line-height:0!important}
 .fw-1x{font-weight:500!important}
+.fw-1-5x{font-weight:600!important}
 .fw-2x{font-weight:700!important}
 .fw-3x{font-weight:800!important}
 .fw-4x{font-weight:900!important}
@@ -123,6 +125,8 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 .bg-overlay1.show{display:block}
 .bg-overlay2{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);z-index:999;display:none}
 .bg-overlay2.show{display:block}
+.ix-inter{font-family:"Inter"}
+.ix-strike{text-decoration:line-through}
 
 /* Show RWD */
 .show-mobile1{display:none!important}
@@ -137,23 +141,30 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 .hide-mobile5{display:block!important}
 
 /* Button */
-.btn,.btn-solid{display:inline-block;border:unset!important;padding:0 20px;height:44px;line-height:44px;position:relative;transition:.25s ease;border-radius:8px}
+.btn,.btn-solid{display:inline-block;border:unset!important;padding:0 20px;height:44px;line-height:43px;position:relative;transition:.25s ease;border-radius:8px;font-family:"Inter"}
 .btn::before,.btn-solid::before{display:block;content:' ';height:0}
 .btn:active,.btn.active{box-shadow:inset 0 0 5px rgba(0,0,0,0.075)}
-.btn-1x{height:24px;line-height:24px;font-size:12px;padding:0 12px}
-.btn-2x{height:28px;line-height:28px;padding:0 16px}
-.btn-3x{height:32px;line-height:32px;padding:0 16px}
-.btn-4x{height:36px;line-height:36px;padding:0 18px}
-.btn-5x{height:40px;line-height:40px;padding:0 18px}
-.btn-6x{height:48px;line-height:48px;padding:0 20px}
+.btn-1x{height:24px;line-height:23px;font-size:12px;padding:0 10px}
+.btn-2x{height:28px;line-height:27px;padding:0 16px}
+.btn-3x{height:32px;line-height:31px;padding:0 14px}
+.btn-4x{height:36px;line-height:35px;padding:0 16px}
+.btn-5x{height:40px;line-height:39px;padding:0 16px}
+.btn-6x{height:48px;line-height:47px;padding:0 18px}
 .btn-circle{border-radius:50%}
 .btn-round{border-radius:200px}
 .btn-block{display:block}
 .btn-wide{min-width:180px;padding-left:24px;padding-right:24px}
 .btn-icon-left{text-align:left!important}
-.btn-icon-left .mdi{font-size:24px;margin-right:16px}
+.btn-searchs{text-align:left!important;position:relative}
+.btn-searchs .mdi{font-size:24px;margin-right:16px;position:absolute;left:30px;top:32px}
+.btn-searchs input{padding-left:52px}
 .btn.disabled{cursor:not-allowed!important}
 .btn-solid.disabled{cursor:not-allowed!important;opacity:.5}
+.btn-group .btn{margin-right:2px}
+.btn-group .btn:nth-child(1){margin-left:0}
+.btn-group .btn-outline{margin-left:-3px!important}
+.btn-group .btn-outline:nth-child(1){border-left-width:1px}
+.btn-group-justified .btn{width:auto}
 
 /* Button Light */
 .btn-red{background-color:#FDEBEA;color:#ef5350!important}
@@ -176,6 +187,8 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 .btn-brown:hover,.btn-brown.active{background-color:#795548!important;color:#fff!important}
 
 /* Button Solid */
+.btn-solid-primary{background-color:#A12520;color:#fff!important}
+.btn-default2{background-color:#ECEFF1;color:#607D8B!important}
 .btn-solid-red{background-color:#ef5350;color:#fff!important}
 .btn-solid-secondary{background-color:#78909C;color:#fff!important}
 .btn-solid-pink{background-color:#EC407A;color:#fff!important}
@@ -236,16 +249,19 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 /* Cakrawala */
 .clear{display:block;clear:both}
 .ix-main{position:relative;z-index:2}
-.ix-box{background-color:#fff;position:relative;border-radius:8px;box-shadow:0 4px 10px -3px rgba(0,0,0,.015)}
+.ix-box{background-color:#fff;position:relative;border-radius:8px;box-shadow:0 4px 15px -3px rgba(0,0,0,.0125);overflow:unset!important}
 .ix-box::after{display:block;clear:both;content:' '}
-.ix-container{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 20px}
+.ix-box--content{position:relative}
+.ix-box--content::after{display:block;clear:both;content:' '}
+.ix-container{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 20px}
 .ix-container::after{display:block;clear:both;content:' '}
-.ix-container2{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:0 20px}
+.ix-container2{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 20px}
 .ix-container2::after{display:block;clear:both;content:' '}
 .ix-container.relative{position:relative}
-.ix-bgcolor-overlay::before{position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;display:block;content:' ';background:#A12520 url(../img/pattern.png);background-attachment:fixed}
+.ix-bgcolor-overlay::before{position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;display:block;content:' ';background:#A12520 url(../img/pattern.png);background-position:center;background-attachment:fixed}
 .ix-pattern-overlay::after{position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;display:block;content:' ';background:url(../img/pattern.png);background-attachment:fixed}
 .progress-bar-lms{background:#A12520}
+.block{display:block!important}
 
 /* List UL */
 .ix-list-none ul,.ix-list-none{list-style:none!important}
@@ -255,7 +271,7 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 .ix-list-dot ul ul,.ix-list-dot-ul ul{padding:0 14px;list-style:none;position:relative}
 .ix-list-dot ul ul::after,.ix-list-dot-ul ul::after{content:' ';display:block;position:absolute;left:3px;top:-8px;bottom:4px}
 .ix-list-dot ul li,.ix-list-dot-ul li{position:relative;margin:4px 0;padding-left:14px}
-.ix-list-dot ul li:before,.ix-list-dot-ul li:before{position:absolute;left:0;top:-1px;content:'•';font-size:20px;opacity:.65;line-height:1}
+.ix-list-dot ul li:before,.ix-list-dot-ul li:before{position:absolute;left:0;top:2px;content:'•';opacity:.65;line-height:1}
 .ix-list-icon ul,.ix-list-icon-ul{list-style:none}
 .ix-list-icon-ul{list-style:none;margin-top:-9px}
 .ix-list-icon-ul li{position:relative;padding:9px 0;padding-left:26px;border-bottom:1px dashed #cfd8dc}
@@ -272,4 +288,105 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 .owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1;height:16px}
 .owl-theme .owl-dots .owl-dot span{width:8px;height:8px;margin:0 6px;background:#fff;opacity:.65;border-radius:20px;display:block;visibility:visible;transition:.2s ease;position:relative}
 .owl-theme .owl-dots .owl-dot:hover span{opacity:1}
-.owl-theme .owl-dots .owl-dot.active span{cursor:default;width:16px;height:16px;background-color:transparent;border:2px solid #fff;opacity:1}
+.owl-theme .owl-dots .owl-dot.active span{cursor:default;width:20px;opacity:1}
+
+/* Badge & Label */
+.label{padding:3px 6px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-padding-before:4px;-webkit-touch-callout:none;-khtml-user-select:none}
+.badge{padding:3px 06px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#555;border-radius:4px;background-color:#d9e1ed;-webkit-touch-callout:none;-khtml-user-select:none}
+.badge,.label{font-size:11px;font-weight:500;display:inline;margin:0!important;text-align:center;border-radius:6px}
+.badge:hover,.label:hover{box-shadow:inset 0 0 500px rgba(0,0,0,.1)}
+.badge-circle{line-height:20px;display:inline-block;width:19px;height:19px;margin:0!important;padding:0}
+.badge-default,.label-default{color:#555!important;background-color:#d9e1ed!important}
+.badge-success,.label-success{color:#fff!important;background-color:#2ecc71!important}
+.badge-danger,.label-danger,.badge-important{color:#fff!important;background-color:#ff1744!important}
+.badge-warning,.label-warning{color:#fff!important;background-color:#ffab40!important}
+.badge-info,.label-info{color:#fff!important;background-color:#26c6da!important}
+.badge-inverse,.label-inverse{color:#fff!important;background-color:#333!important}
+
+/* Paginaiton */
+ul.pagination{display:flex;margin:0!important;padding:14px 0 0!important;padding-bottom:0;justify-content:left;flex-wrap:wrap}
+ul.pagination li{padding-left:initial}
+ul.pagination li::before{display:none}
+.panel .pagination{margin:0!important}
+.pagination:after{display:block;clear:both;content:' '}
+.pagination > li{display:block;float:left;margin:6px 6px 0 0!important;padding:0!important}
+.pagination > li:last-child{margin-right:0!important}
+.pagination > li:before{display:none}
+.pagination > li > a,.pagination > .disabled > span,.pagination > .disabled > span:hover,.pagination > .disabled > span:focus,.pagination > .disabled > a,.pagination > .disabled > a:hover,.pagination > .disabled > a:focus{font-size:12px!important;position:relative;min-width:36px;height:36px;padding:9px 12px;text-align:center;color:#444;border:0;border-radius:8px!important;background-color:#EEEEEE}
+.pagination > li > a:hover{background-color:#ECECEC;box-shadow:inset 0 0 50px rgba(0,0,0,.1);color:#A12520}
+.pagination > li.active > a{font-weight:bold;background-color:#A12520!important;cursor:not-allowed!important}
+.pagination > li.active > a:hover{color:#fff!important;box-shadow:unset}
+.pagination > li.disabled > a,.pagination > li.disabled > span{background-color:transparent!important;box-shadow:unset!important;pointer-events:none;border:1px solid #eee!important;min-width:34px!important}
+
+/* Form */	
+form label{font-size:14px}
+textarea{min-width:100%;max-width:100%;min-height:52px}
+input:focus{outline:none!important}
+select.form-control{font-size:16px;opacity:.75;color:#333;background:#fff url(../../../ix-assets/img/chevron-down.png);background-repeat:no-repeat;background-position:right center;background-origin:content-box}
+textarea{height:inherit;padding:16px!important}
+.form-group{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none}
+.help-block{font-size:12px;font-style:italic;padding:2px 16px 4px}
+.form-group{position:relative;margin-bottom:16px}
+.form-group:last-child{margin-bottom:0}
+.form-group:after{display:block;clear:both;content:' '}
+.form-group label{font-size:14px;padding:0 16px 2px}
+.form-control{font-size:14px!important;position:relative;height:44px;padding:0 16px;border:0;border-radius:8px;box-shadow:0 0 0 1px inset #ccc}
+.form-control:focus{box-shadow:0 0 0 1px inset #A12520}
+.form-control.input-pill{border-radius:60px}
+.form-control.input-lg{height:52px}
+.form-control.input-sm{height:36px}
+.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child),.input-group .form-control:not(:first-child):not(:last-child){border-radius:0 6px 6px 0}
+.ix-custom-form .form-group{background-color:#fff}
+.ix-custom-form .form-group .form-control{position:relative;z-index:1;background-color:transparent}
+.ix-custom-form .form-group label{font-size:14px;font-weight:normal;position:absolute;z-index:0;top:12px;left:10px;display:block;padding:0 6px;transition:.15s ease;color:#aaa;background-color:transparent;-webkit-padding-before:1px}
+.ix-custom-form .form-group .form-control.input-sm ~ label{top:8px}
+.ix-custom-form .form-group .form-control.input-lg ~ label{top:16px}
+.ix-custom-form .form-group textarea.form-control ~ label{top:16px}
+.ix-custom-form .form-group .form-control:focus{position:relative;z-index:0}
+.ix-custom-form .form-group .form-control:focus ~ label,.ix-custom-form .form-group .form-control.active ~ label,.ix-custom-form .form-group .form-control:not(:placeholder-shown) ~ label{font-size:11px;z-index:1;top:-8px!important;background-color:#fff;}
+.ix-custom-form .form-group.has-select label{position:relative;top:unset;left:unset;display:block;padding:0 16px 2px;transition:unset;color:#444;background-color:unset;-webkit-padding-before:1px}
+.ix-custom-form .form-horizontal{padding-left:15px;padding-right:15px}
+.ix-custom-form .input-group{position:relative;width:100%}
+.ix-custom-form .input-group-addon{line-height:36px;display:block;width:auto;height:36px;padding:0 12px;border:0!important;border-radius:0!important;background-color:transparent}
+.ix-custom-form .input-group-addon:last-child{position:absolute;top:50%;right:4px;transform:translateY(-50%)}
+.ix-custom-form .form-control ~ .input-group-addon:last-child{line-height:32px;height:32px;margin-right:4px;padding:0}
+.ix-custom-form .form-control.input-lg ~ .input-group-addon:last-child{line-height:44px;height:44px;margin-right:8px}
+.ix-custom-form .form-inline .input-group{position:relative}
+.ix-custom-form .form-inline .input-group-addon{line-height:40px;display:block;width:auto;height:40px;padding:0 12px;border:1px solid #ccc!important;border-radius:6px!important}
+.ix-custom-form .form-inline .form-control.input-lg ~ .input-group-addon{line-height:52px;height:52px}
+.ix-custom-form .form-inline .form-control.input-sm ~ .input-group-addon{line-height:36px;height:36px}
+.ix-custom-form .form-inline .input-group-addon:last-child{position:unset;top:unset;right:unset;float:right;margin-left:4px;transform:unset}
+.ix-custom-form .form-inline .input-group-addon:first-child{float:left;margin-right:4px}
+.checkbox,.radio,.checkbox-inline,.radio-inline{position:relative;padding:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none}
+.checkbox.disabled,.radio.disabled,.checkbox-inline.disabled,.radio-inline.disabled{cursor:not-allowed;opacity:.4}
+.checkbox label,.radio label{position:relative;padding:0;padding-left:28px}
+.checkbox input,.radio input,.checkbox-inline input,.radio-inline input{position:absolute;width:0;height:0;opacity:0}
+.checkbox .custom-mark,.checkbox-inline .custom-mark{line-height:18px;position:absolute;top:0;left:0;display:block;width:20px!important;height:20px!important;padding:0!important;transition:.25s ease;border-radius:5px;background-color:#e0e0e0;-webkit-margin-before:-1px}
+.checkbox input:checked ~ .custom-mark,.checkbox-inline input:checked ~ .custom-mark{background-color:#A12520}
+.checkbox input:checked ~ .custom-mark::after,.checkbox-inline input:checked ~ .custom-mark::after{position:absolute;top:50%;left:50%;display:block;width:10px;height:0;margin-left:2px;content:' ';transform:translate(-50%,-50%) rotate(-45deg);opacity:1;border-top:2px solid #fff;background-color:#fff}
+.checkbox input:checked ~ .custom-mark::before,.checkbox-inline input:checked ~ .custom-mark::before{position:absolute;top:50%;left:50%;display:block;width:6px;height:0;margin-top:1px;margin-left:-3px;content:' ';transform:translate(-50%,-50%) rotate(45deg);opacity:1;border-top:2px solid #fff;background-color:#fff}
+.radio .custom-mark,.radio-inline .custom-mark{line-height:18px;position:absolute;top:0;left:0;display:block;width:20px!important;height:20px!important;padding:0!important;transition:.25s ease;border-radius:18px;background-color:#e0e0e0;-webkit-margin-before:-1px}
+.radio input:checked ~ .custom-mark::after,.radio-inline input:checked ~ .custom-mark::after{position:absolute;top:50%;left:50%;display:block;width:6px;height:6px;content:' ';transform:translate(-50%,-50%);opacity:1;border-radius:6px;background-color:#fff}
+.radio input:disabled ~ .custom-mark,.checkbox input:disabled ~ .custom-mark,.radio-inline input:disabled ~ .custom-mark,.checkbox-inline input:disabled ~ .custom-mark{cursor:not-allowed;border:1px solid #999;background-color:#fff}
+.checkbox-inline,.radio-inline{display:inline-block!important;padding-left:28px}
+.checkbox-inline label,.radio-inline label{position:relative;padding:0}
+.form-inline .checkbox,.form-inline .radio{margin:0 12px 0 8px;}
+.form-inline .checkbox label,.form-inline .radio label{padding-left:22px}
+.input-group-addon{background-color:transparent}
+.input-group input{border-radius:0!important}
+.input-group input:nth-child(1),.input-group .input-group-addon:nth-child(1){border-radius:6px 0 0 6px!important}
+.input-group input:last-child,.input-group .input-group-addon:last-child{border-radius:0 6px 6px 0!important}
+
+@media (max-width:860px){
+  .checkbox .custom-mark,.checkbox-inline .custom-mark,.radio .custom-mark,.radio-inline .custom-mark{top:-1px}
+}
+@media (max-width:640px){
+  .form-control.input-lg{height:44px}
+  .form-control.input-sm{height:44px}
+  .ix-custom-form .form-group .form-control.input-sm ~ label{top:12px}
+  .ix-custom-form .form-group .form-control.input-lg ~ label{top:12px}
+  .ix-custom-form .form-group textarea.form-control ~ label{top:12px}
+}
+
+.dropdown-menu.fullx{min-width:unset;width:100%;}
+.dropdown-menu .active a{background-color:#A12520!important}

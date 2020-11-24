@@ -90,7 +90,7 @@
           <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="my-course.html">My Course</a></li>
           <li><a href="my-course-view.html">DEI4I2-MD-41-C_D</a></li>
-          <li class="active">Classmate</li>
+          <li class="active">Task Listing</li>
         </ol>
       </div>
 
@@ -102,9 +102,9 @@
               <div class="row">
                 <div class="col-sm-9">
                   <div class="btn-group" role="group" aria-label="...">
-                    <a href="my-course-view-classmate.html" class="fs-0x btn btn-icon-left btn-5x btn-default active"><i class="mdi mdi-1x margin-h1x margin-lef-reset top-1x mdi-account-group"></i>Classmate</a>
+                    <a href="my-course-view-classmate.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x margin-lef-reset top-1x mdi-account-group"></i>Classmate</a>
                     <a href="my-course-view-grade.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-star"></i>Score</a>
-                    <a href="my-course-view-tasklist.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-clipboard-list"></i>Task (2)</a>
+                    <a href="my-course-view-tasklist.html" class="fs-0x btn btn-icon-left btn-5x btn-default active"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-clipboard-list"></i>Task (2)</a>
                     <a href="#" title="WhatsApp Group" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x top-1x mdi-whatsapp"></i></a>
                   </div>
                 </div>
@@ -128,12 +128,15 @@
                   <div class="dropdown">
                     <a class="btn btn-icon-left btn-block btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                       <i class="mdi mdi-3x margin-h2x margin-lef-reset top-4x mdi-sort"></i>
-                      Sort by A-Z
+                      Sort by Closest Due
                     </a>
                     <ul class="dropdown-menu fullx" aria-labelledby="dropdownMenu1">
                       <li><a href="#">A-Z</a></li>
-                      <li><a href="#">Z-A</a></li>
-                      <li><a href="#">Recently Online</a></li>
+                      <li><a href="#">Closest Due</a></li>
+                      <li><a href="#">Recently Added</a></li>
+                      <li><a href="#">Submited</a></li>
+                      <li><a href="#">Overdue</a></li>
+                      <li><a href="#">Closed</a></li>
                     </ul>
                   </div>
                 </div>
@@ -146,129 +149,80 @@
             </div>
             <div class="ix-content--full ix-inter">
               <h4 class="sectionname">
-                Classmate (52)
+                Task Listing (2)
               </h4>
-              <div class="ix-table-classmate-container">
+              <div class="ix-custom-table">
+                <table>
+                  <tbody id="history_transaksi">
 
-                <table class="table ix-table-classmate teacher" id="participants">
-                  <tbody>
                     <tr>
+                      <td><span class="badge badge-success" data-toggle="tooltip" data-title="Task Submited"><i class="mdi mdi-center mdi-1x mdi-check"></i></span></td>
                       <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp2.jpg" class="img-wrap"></div>
+                        <span>Tugas #5 <u>•</u> Membuat Deal Dengan Klien</span>
+                        <small>6 days 3 hours</small>
                       </td>
                       <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          FAUZI ARIF ADHIKA
-                        </a>
-                        <span>Teacher</span>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
                       </td>
-                      <td>
-                        Last seen 9 hours ago
-                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
                     </tr>
+                    <tr>
+                      <td><span class="badge badge-success" data-toggle="tooltip" data-title="Task Submited"><i class="mdi mdi-center mdi-1x mdi-check"></i></span></td>
+                      <td>
+                        <span>Tugas #5 <u>•</u> Membuat Deal Dengan Klien</span>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-success" data-toggle="tooltip" data-title="Task Submited"><i class="mdi mdi-center mdi-1x mdi-check"></i></span></td>
+                      <td>
+                        <span>Tugas #5 <u>•</u> Membuat Deal Dengan Klien</span>
+                        <small><i>Overdue by 2 hours</i></small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-danger" data-toggle="tooltip" data-title="Task Overdue"><i class="mdi mdi-center mdi-1x mdi-clock-alert-outline" style="margin-top:-1px;"></i></span></td>
+                      <td>
+                        <span>Tugas #2 <u>•</u> Membuat Proposal #1</span>
+                        <small>Overdue by 2 hours</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge" data-toggle="tooltip" data-title="Task Not Submited"><i class="mdi mdi-center mdi-1x mdi-timer-outline"></i></span></td>
+                      <td>
+                        <span>Tugas #3 <u>•</u> Mereview Aplikasi Manajemen Proyek</span>
+                        <small>6 days 3 hours</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">27 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr class="disabled">
+                      <td><span class="badge badge-black" data-toggle="tooltip" data-title="Task Closed"><i class="mdi mdi-center mdi-1x mdi-close"></i></span></td>
+                      <td>
+                        <span>Tugas #3 <u>•</u> Mereview Aplikasi Manajemen Proyek</span>
+                        <small>You're not submit this task</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">27 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+
                   </tbody>
                 </table>
-                <table class="table ix-table-classmate" id="participants">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp.jpg" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          MIKO HUSTON
-                          <span>Student • Group 3</span>
-                        </a>
-                      </td>
-                      <td>Last seen 2 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp.jpg" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          NICK STEVEN
-                          <span>Student</span>
-                        </a>
-                      </td>
-                      <td>Last seen 7 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp3.jfif" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          NIELSEN AUDREY
-                          <span>Student</span>
-                        </a>
-                      </td>
-                      <td>Last seen 7 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp3.jfif" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          TIFFANY SCARLET
-                          <span>Student</span>
-                        </a>
-                      </td>
-                      <td>Last seen 7 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp.jpg" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          MIKO HUSTON
-                          <span>Student • Group 3</span>
-                        </a>
-                      </td>
-                      <td>Last seen 2 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp.jpg" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          NICK STEVEN
-                          <span>Student</span>
-                        </a>
-                      </td>
-                      <td>Last seen 7 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp3.jfif" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          NIELSEN AUDREY
-                          <span>Student</span>
-                        </a>
-                      </td>
-                      <td>Last seen 7 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="ix-classmate-pp"><img src="../assets/img/pp3.jfif" class="img-wrap"></div>
-                      </td>
-                      <td>
-                        <a href="https://lms.telkomuniversity.ac.id/user/view.php?id=26201&amp;course=6147" class="d-inline-block aabtn">
-                          TIFFANY SCARLET
-                          <span>Student</span>
-                        </a>
-                      </td>
-                      <td>Last seen 7 hours ago</td>
-                    </tr>
-                  </tbody>
-                </table>
-
               </div>
               <nav>
                 <ul class="pagination">

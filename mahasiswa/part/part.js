@@ -12,14 +12,14 @@ $('.ix-navbar').html(`
     </ul>
     <ul class="dua">
       <li class="ix-role-status">
-        <div class="btn btn-red btn-1x btn-round cursor-none">Student</div>
+        <div class="btn btn-red btn-1x btn-round cursor-none" style="font-size:10px;line-height:23px;text-transform:uppercase;font-weight:bold">Student</div>
       </li>
-      <li><a href="#"><i class="mdi mdi-centered mdi-message-reply"></i></a></li>
-      <li><a href="#"><i class="mdi mdi-centered mdi-bell"></i></a></li>
+      <li><a href="message.html"><i class="mdi mdi-center mdi-message-reply"></i></a></li>
+      <li><a href="notification.html"><i class="mdi mdi-center mdi-bell"></i></a></li>
       <li class="ix-navbar-dropdown">
         <a><span><img src="../assets/img/pp.jpg" class="img-wrap" alt=""></span></a>
         <ul>
-          <li>
+          <li class="ix-inter">
             <div>
               <b>Adnan Rahmadi</b>
               <p>FIK / DKV <br> NIM. 1601174232</p>
@@ -38,7 +38,7 @@ $('.ix-navbar').html(`
 `);
 
 $('.ix-footer').html(`
-<div class="copy-menu">
+<div class="copy-menu ix-inter">
   <a href="#">About</a>
   <a href="#">F.A.Q</a>
   <a href="#">Terms of Service</a>
@@ -49,4 +49,25 @@ $('.ix-footer').html(`
     Center for e-Learning &amp; Open Education Telkom University &copy; 2020
   </div>
 </div>
-`)
+`);
+
+$('.ix-course-week--activity').html(`
+<li class="activity" id="module-570773">
+  <a href="my-course-view.html"> <i class="mdi mdi-arrow-left-circle-outline"></i> Back to Summary</a>
+</li>
+<li class="activity" id="module-570773">
+  <a href="my-course-view-activity.html"> <i class="mdi mdi-comment-multiple"></i>Artikel <span class="completion-status selesai"><i class="mdi mdi-check-bold"></i></span></a>
+</li>
+<li class="activity" id="module-570773">
+  <a href="my-course-view-activity-video.html"> <i class="mdi mdi-video"></i>Video 1<span class="completion-status selesai"><i class="mdi mdi-check-bold"></i></span></a>
+</li>
+<li class="activity" id="module-570773">
+  <a href="my-course-view-activity-video2.html"> <i class="mdi mdi-video"></i>Video 2<span class="completion-status selesai"><i class="mdi mdi-check-bold"></i></span></a>
+</li>
+<li class="activity" id="module-570773">
+  <a href="my-course-view-activity-forum.html"> <i class="mdi mdi-forum"></i>Forum <span class="completion-status selesai"><i class="mdi mdi-minus"></i></span></a>
+</li>
+<li class="activity" id="module-570773">
+  <a href="my-course-view-activity-task.html"> <i class="mdi mdi-format-list-checks"></i>Tugas <span class="completion-status"><i class="mdi mdi-minus"></i></span></a>
+</li>
+`);

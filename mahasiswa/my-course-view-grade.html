@@ -45,6 +45,10 @@
     .ix-content-container .ix-bgcolor-overlay::after {
       opacity: .45
     }
+
+    .ix-footer {
+      margin-bottom: 40px !important;
+    }
   </style>
 
 </head>
@@ -86,11 +90,11 @@
           <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="my-course.html">My Course</a></li>
           <li><a href="my-course-view.html">DEI4I2-MD-41-C_D</a></li>
-          <li class="active">Pertemuan 1: Link to Class</li>
+          <li class="active">Grade</li>
         </ol>
       </div>
 
-      <div class="ix-container ix-content--2side">
+      <div class="ix-container ix-content--1side">
         <div class="ix-box">
 
           <div class="ix-content--fulltop margin-bot-reset">
@@ -99,7 +103,7 @@
                 <div class="col-sm-9">
                   <div class="btn-group" role="group" aria-label="...">
                     <a href="my-course-view-classmate.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x margin-lef-reset top-1x mdi-account-group"></i>Classmate</a>
-                    <a href="my-course-view-grade.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-star"></i>Score</a>
+                    <a href="my-course-view-grade.html" class="fs-0x btn btn-icon-left btn-5x btn-default active"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-star"></i>Score</a>
                     <a href="my-course-view-tasklist.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-clipboard-list"></i>Task (2)</a>
                     <a href="#" title="WhatsApp Group" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x top-1x mdi-whatsapp"></i></a>
                   </div>
@@ -117,62 +121,49 @@
             </div>
           </div>
 
-          <div class="ix-content--full-padding">
-            <b>#1 Ruang Lingkup Manajemen Proyek - Artikel</b>
-            <nav class="nextprev-course">
-              <ul class="pagination">
-                <li class="disabled"><a href="#" data-toggle="tooltip" data-placement="top" title="Previous"><i class="mdi mdi-2x mdi-center mdi-chevron-left"></i></a></li>
-                <li><a href="my-course-view-activity-video.html" data-toggle="tooltip" data-placement="top" title="Next"><i class="mdi mdi-2x mdi-center mdi-chevron-right"></i></a></li>
-              </ul>
-            </nav>
-          </div>
-
           <div class="ix-box--content">
-            <div class="ix-content--left colsx2">
-              <ul role="tablist" class="ix-left-menu iconss ix-course-week--activity ix-list-none">
-              </ul>
-            </div>
-            <div class="ix-content--right ix-inter ix-course-content">
-              <div class="tab-content padding-reset">
-                <div class="no-overflow">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate a lectus eu aliquet. Mauris at massa ac lorem posuere eleifend id eget tellus. Vivamus blandit leo nec fringilla elementum.
-                  <p>&nbsp;</p>
-                  Duis id ullamcorper nunc. Donec eget molestie magna. Etiam mi ipsum, finibus et vulputate in, suscipit nec elit. In laoreet velit luctus libero congue, non convallis velit mattis. Aenean rhoncus, lorem quis sagittis sodales, nulla erat consequat sapien, quis ornare magna tellus id risus.
-                  <p>&nbsp;</p>
-                  <blockquote>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum adipisci sequi incidunt ratione quod dolores, rerum eius enim numquam, praesentium magni rem nostrum veniam aut cupiditate consequatur magnam quis sit.
-                  </blockquote>
-                  <p>&nbsp;</p>
-                  <img src="../assets/img/3.jpg" alt="">
-                  <p>&nbsp;</p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, eaque! Neque at ratione atque odit rerum quos, a, amet animi repudiandae. Facere dicta ducimus dolorem, voluptate quibusdam error culpa illo.
-                  <p>&nbsp;</p>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                  </ul>
-                  <p>&nbsp;</p>
-                  <ol>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                  </ol>
-                  <p>&nbsp;</p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, temporibus dolore aspernatur sit! Provident nulla, maxime, aperiam asperiores sint amet!
-                  <hr>Laudantium suscipit exercitationem dolor cupiditate cumque enim tempore magni aliquid.
-                  <p>&nbsp;</p>
-                  <h1>Heading 1</h1>
-                  <h2>Heading 2</h2>
-                  <h3>Heading 3</h3>
-                  <h4>Heading 4</h4>
-                  <h5>Heading 5</h5>
-                </div>
+            <div class="ix-content--full ix-inter">
+              <h4 class="sectionname">
+                Grade
+              </h4>
+              <div class="ix-table-grade-container">
+
+                <table class="table margin-bot-reset">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Nilai</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Tugas 1</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Tugas 1</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Tugas 1</td>
+                      <td>80</td>
+                    </tr>
+                  </tbody>
+                </table>
+
               </div>
+              <nav>
+                <ul class="pagination">
+                  <li class="disabled"><span><span aria-hidden="true"><i class="mdi mdi-2x mdi-center mdi-chevron-left"></i></span></span></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#"><i class="mdi mdi-2x mdi-center mdi-chevron-right"></i></a></li>
+                </ul>
+              </nav>
             </div>
           </div>
 
@@ -181,13 +172,11 @@
 
     </section>
   </main>
-  <footer class="ix-footer coursezzz">
+  <footer class="ix-footer">
   </footer>
-
 
   <!-- Overlay -->
   <div class="bg-overlay1"></div>
-
 
   <script src="part/part.js"></script>
   <script src="../assets/js/ixlab.js"></script>
@@ -204,9 +193,7 @@
       });
     });
     $('.ix-navbar-menu ul li:contains("My Course")').addClass('active');
-    $('.ix-course-week--activity li:contains("Artikel")').addClass('active');
   </script>
-
 
 </body>
 
