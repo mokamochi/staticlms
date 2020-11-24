@@ -135,10 +135,12 @@
           </div>
 
           <div class="ix-content--full-padding">
+            <div class="btn btn-3x btn-red" data-toggle="modal" data-target="#myModal">Add Topic</div>
+            <br>
+            <br>
             <div class="ix-custom-table ix-custom-table--forum ix-inter">
               <table>
                 <tbody>
-
                   <tr>
                     <td><span class="badge badge-default" data-toggle="tooltip" data-title="Favourite this" data-original-title="" title=""><i class="mdi mdi-center mdi-1x mdi-star-outline" style="margin-top:-1px;"></i></span></td>
                     <td>
@@ -191,6 +193,36 @@
 
   <!-- Overlay -->
   <div class="bg-overlay1"></div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Add Topic</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Judul">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" class="form-control" placeholder="Isi" cols="30" rows="10"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"><span class="custom-mark"></span> Subscribe my Post
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-3x lh-1x btn-default" data-dismiss="modal">Batal</button> &nbsp;
+          <button type="button" class="btn btn-solid btn-3x lh-1x btn-solid-red">Post to Forum</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 
   <script src="part/part.js"></script>
