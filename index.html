@@ -4,48 +4,107 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Center for e-Learning and Open Education</title>
+  <title>STEVEN UDIN - CeLOE.</title>
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="assets/vendor/owl.carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/font/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
 
-  <!-- Core -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-comp.css">
 
   <!-- Vendor JS -->
-  <script src="assets/vendor/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
   <script src="assets/vendor/trackpademulator/trackpademulator.min.js"></script>
+
 
 </head>
 
 <body style="padding:0!important">
 
-  <nav class="ix-navbar ix-public-navbar">
-    <div class="ix-container">
-      <div class="ix-navbar-brand">
-        <a href="#"><img src="assets/img/logo.png" alt=""></a>
-      </div>
-      <div class="ix-navbar-menu">
-        <ul class="satu">
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="my-course.html">My Course</a></li>
-          <li><a href="my-drive.html">My Files</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-        </ul>
-        <ul class="dua">
-          <li>
-            <a class="btn btn-red btn-1x" href="#">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="ix-login-bg"><img src="assets/img/3.jpg" alt="" class="img-wrap" /></div>
 
+  <div class="ix-login-section">
+    <div class="ix-box padding-5x">
+      <div class="ix-login-state">
+        <!-- <div class="loginerrors mt-3" id="yui_3_17_2_1_1602790815422_26">
+            <div class="alert alert-danger" role="alert" data-aria-autofocus="true" tabindex="0" id="yui_3_17_2_1_1602790815422_25">Your session has timed out. Please log in again.</div>
+          </div> -->
+        <div class="login-logo text-center">
+          <img src="assets/img/logo-med.png" alt="">
+          <br>
+          <h4 style="margin:16px 0 22px">Login</h4>
+        </div>
+        <a href="mahasiswa/dashboard.html" class="btn-block btn-solid btn-solid-red text-center btn-6x margin-v2x"> <i class="mdi mdi-reset mdi-3x top-3x mdi-microsoft-office margin-h1x marlef-0x"></i> Connect with Office365 (Student)</a>
+        <a class="btn-block btn-solid btn-solid-red text-center btn-6x margin-v2x disabled" data-toggle="tooltip" data-placement="top" title="preview is only available for students now"> <i class="mdi mdi-reset mdi-3x top-3x mdi-microsoft-office margin-h1x marlef-0x"></i> Connect with Office365 (Teacher)</a>
+        <br>
+        <ul class="nav nav-tabs ix-flag" role="tablist">
+          <li role="presentation" class="active"><a href="#how-login-id" data-toggle="tab"><img src="assets/img/ID.png" alt="" />IDN</a></li>
+          <li role="presentation"><a href="#how-login-en" data-toggle="tab"><img src="assets/img/EN.png" alt="" />ENG</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade active in" id="how-login-id">
+            <ul class="ix-list-dot-ul">
+              <li>Akses hanya untuk <b>Dosen dan Mahasiswa Telkom University.</b></li>
+              <li>Login menggunakan <b>Akun Microsoft Office 365 Telkom University</b> dengan mengikuti petunjuk berikut :</li>
+              <ul>
+                <li>Username SSO (Akun iGracias) dengan ditambahkan <b>@365.telkomuniversity.ac.id</b> pada kolom Email.</li>
+                <li>Password SSO (Akun iGracias) pada kolom Password.</li>
+              </ul>
+              <li>Kegagalan yang terjadi pada Autentikasi dapat disebabkan oleh Anda belum melakukan ubah Password Anda menjadi <b>Strong Password</b>.</li>
+              <li>Pastikan Anda telah melakukan perubahan Password di iGracias.</li>
+              <li>Informasi lebih lanjut dapat menghubungi Layanan CeLOE Helpdesk :</li>
+              <ul>
+                <li><b>Email</b> : infoceloe@telkomuniversity.ac.id</li>
+                <li><b>WhatsApp</b> : +62 821 1666 3563</li>
+              </ul>
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="how-login-en">
+            <ul class="ix-list-dot-ul">
+              <li>Access restricted only for <b>Lecturer and Student of Telkom University.</b></li>
+              <li>Login with your <b>Microsoft Office 365 Telkom University Account</b> by following these format :</li>
+              <ul>
+                <li>Username SSO (iGracias Account) followed with <b>@365.telkomuniversity.ac.id</b> on Email field.</li>
+                <li>Password SSO (iGracias Account) on Password field.</li>
+              </ul>
+              <li>Failure upon Authentication could be possibly you have not yet change your password into <b>Strong Password</b>.</li>
+              <li>Make sure to change your Password only on iGracias.</li>
+              <li>For further Information, please contact CeLOE Service Helpdesk :</li>
+              <ul>
+                <li><b>Email</b> : infoceloe@telkomuniversity.ac.id</li>
+                <li><b>WhatsApp</b> : +62 821 1666 3563</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <h4 class="text-center">Follow us</h4>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+
+  <script src="assets/js/ixlab.js"></script>
+  <script>
+    $(document).ready(function () {
+      var owl = $('.ix-featured');
+      owl.owlCarousel({
+        margin: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 1
+      });
+    });
+  </script>
 </body>
 
 </html>
