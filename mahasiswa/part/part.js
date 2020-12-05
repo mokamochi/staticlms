@@ -1,7 +1,7 @@
 $('.ix-navbar').html(`
 <div class="ix-container">
   <div class="ix-navbar-brand">
-    <a href="#"><img src="../assets/img/logo.png" alt=""></a>
+    <a href="dashboard.html"><img src="../assets/img/logo.png" alt=""></a>
   </div>
   <div class="ix-navbar-menu">
     <ul class="satu">
@@ -21,8 +21,8 @@ $('.ix-navbar').html(`
         <ul>
           <li class="ix-inter">
             <div>
-              <b>Adnan Rahmadi</b>
-              <p>FIK / DKV <br> NIM. 1601174232</p>
+              <b>Steven</b>
+              <p>FIK / DKV <br> NIM. 1290312839</p>
             </div>
           </li>
           <li><a href="profile.html"><i class="mdi mdi-account"></i> Profile</a></li>
