@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Dashboard - Student - CeLOE.</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../assets/vendor/owl.carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/font/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style-comp.css">
+
+  <!-- Vendor JS -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+  <script src="../assets/vendor/trackpademulator/trackpademulator.min.js"></script>
+
+  <style>
+    .ix-bgcolor-overlay::before {
+      background: url(../assets/img/material-design-wp/13.png);
+      background-position: center;
+      background-attachment: fixed
+    }
+
+    .ix-bgcolor-overlay::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: ' ';
+      background: #000;
+      opacity: .35
+    }
+
+    .ix-content-container .ix-bgcolor-overlay::after {
+      opacity: .45
+    }
+
+    .modal-body {
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+      overflow-x:hidden!important;
+      padding: 20px!important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="ix-course-progress">
+    <div class="progress">
+      <div class="progress-bar progress-bar-lms" role="progressbar" aria-valuenow="1.2" aria-valuemin="50" aria-valuemax="100" style="min-width:28.4%"></div>
+    </div>
+    <b>Week #8 <span style="margin:0 4px">-</span> Course Activity 28.4% / 100%</b>
+  </div>
+
+  <nav class="ix-navbar">
+  </nav>
+  <main>
+
+    <div class="ix-page-title">
+      <div class="ix-bgcolor-overlay"></div>
+      <div class="ix-container">
+        <div class="padding-v5x relative">
+          <a href="my-course.html" class="back-to-course" data-toggle="tooltip" data-placement="right" title="Back to course listing"><i class="mdi mdi-arrow-left"></i></a>
+          <h3>
+            Manajemen Proyek [FAA]
+          </h3>
+          <div class="additional-btn">
+            <a href="my-course-view.html" class="btn btn-round">List View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ix-content-container">
+      <div class="ix-bgcolor-overlay"></div>
+
+      <div class="ix-breadcrumb">
+        <ol class="breadcrumb ix-container">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="my-course.html">My Course</a></li>
+          <li class="active">DEI4I2-MD-41-C_D</li>
+        </ol>
+      </div>
+
+      <div class="ix-container ix-content--2side">
+        <div class="ix-box">
+
+          <div class="ix-content--fulltop margin-bot-reset">
+            <div class="ix-course-info">
+              <div class="row">
+                <div class="col-sm-9">
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="my-course-view-classmate.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x margin-lef-reset top-1x mdi-account-group"></i>Classmate</a>
+                    <a href="my-course-view-grade.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-star"></i>Score</a>
+                    <a href="my-course-view-tasklist.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-clipboard-list"></i>Task (2)</a>
+                    <a href="#" title="WhatsApp Group" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x top-1x mdi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="ix-course-info--dosen">
+                    <a href="../dosen/profil.html"><img src="../assets/img/pp2.jpg" class="img-wrap" alt=""></a>
+                    <span>
+                      <b style="display:block"><a href="../dosen/profil.html">Fauzi Arif Adhika</a></b>
+                      <small>Teacher</small> <br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ix-content--full">
+            <div class="ix-grid-container ix-grid-4 img-hover my-course-grid" id="course-grids">
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li>
+                    <a data-toggle="modal" data-target="#myModal"><img src="../assets/img/material-design-wp/13.png" alt=""></a>
+                  </li>
+                  <li><a data-toggle="modal" data-target="#myModal"><b>#1 Ruang Linkup Manajemen Proyek</b></a></li>
+                </ul>
+              </div>
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li>
+                    <a data-toggle="modal" data-target="#myModal2"><img src="../assets/img/material-design-wp/13.png" alt=""></a>
+                  </li>
+                  <li><a data-toggle="modal" data-target="#myModal2"><b>#1 Ruang Linkup Manajemen Proyek</b></a></li>
+                </ul>
+              </div>
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li>
+                    <a href="my-course-view.html"><img src="../assets/img/material-design-wp/13.png" alt=""></a>
+                  </li>
+                  <li><a href="my-course-view.html"><b>#1 Ruang Linkup Manajemen Proyek</b></a></li>
+                </ul>
+              </div>
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li>
+                    <a href="my-course-view.html"><img src="../assets/img/material-design-wp/13.png" alt=""></a>
+                  </li>
+                  <li><a href="my-course-view.html"><b>#1 Ruang Linkup Manajemen Proyek</b></a></li>
+                </ul>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h3>Alternatif 2</h3>
+            <br>
+            <br>
+            <div class="ix-grid-container ix-grid-4 img-hover my-course-grid no-imgss" id="course-grids">
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li><a href="my-course-view.html" style="display:block"><b>#1 Ruang Linkup Manajemen Proyek</b></a></li>
+                </ul>
+              </div>
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li><a href="my-course-view.html" style="display:block"><b>#2 Lipsum</b></a></li>
+                </ul>
+              </div>
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li><a href="my-course-view.html" style="display:block"><b>#3 Lorem</b></a></li>
+                </ul>
+              </div>
+              <div class="ix-grid-item">
+                <ul class="ix-list-none">
+                  <li><a href="my-course-view.html" style="display:block"><b>#3 Lorem</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="ix-footer coursezzz">
+  </footer>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">#1 Ruang Linkup</h4>
+        </div>
+        <div class="modal-body">
+          <div class="no-overflow">
+            <div class="alert alert-danger">Konsep : Ketika klik <b>next/previous</b> scroll otomatis ke atas, jadi tidak stay di lokasi terakhir, untuk scriptnya maaf saya kurang tahu.</div>
+            <b>I. Identitas Mata Kuliah</b> <br>
+            a. Kode: MDH4D2 <br>
+            b. Nama Mata Kuliah: Manajemen Proyek <br>
+            c. SKS: 2 SKS <br>
+            d. Prodi: Desain Komunikasi Visual <br>
+            e. Fakultas: Fakultas Industri Kreatif
+            <br>
+            <br>
+            <b>II. Profil dan sejarah</b> <br>
+            Memberikan pemahaman dan pengetahuan mengenai manajemen proyek DKV, mulai dari persiapan, perencanaan, pelaksanaan, pengendalian dan pengakhiran suatu proyek. Metode pembelajaran menerapkan studi kasus, simulasi dengan klien, diawali dengan riset lapangan, analisis, presentasi dan negosiasi dan dokumentasi proyek.
+            <br>
+            <br>
+            <b>III. Relevansi Mata Kuliah</b> <br>
+            Mahasiswa DKV yang memiliki keterampilan teknis yang berkaitan dengan desain dan visual perlu dibekali dari sisi bisnis, pemahaan bagaimana suatu bisnis desain berlangsung. Pengelolaan proyek desain dari awal sampai akhir haruslah dipahami agar penerapan desain dalam dunia nyata dapat dilihat tidak hanya dari sisi visual dan teknis namun dari pengelolaan proyek desain tersebut.
+            <br>
+            <br>
+            <b>IV. Kaitan Mata Kuliah dengan Mata Kuliah lainnya.</b> <br>
+            Mata kuliah Manajemen Proyek ini berkaitan dengan penerapan dari beberapa studio manajemen desain (Manajemen Desain 1, 2, 3, 4), Komputer Grafis, Tinjauan Manajemen Desain, Proses Komunikasi.
+            <br>
+            <br>
+            <b>V. Peta (Struktur) Kemampuan Akhir Tahapan Pembelajaran (Peta CP)</b> <br><br>
+            <img src="../assets/img/CP.jpg" alt="Capaian pembelajaran" />
+            <br>
+            <br>
+            <b>VI. Pokok Bahasan</b> <br>
+            1. Ruang Lingkup Proyek <br>
+            2. Membangun Tim 1 <br>
+            3. <a title="Membangun Tim 2" href="https://lms.telkomuniversity.ac.id/mod/resource/view.php?id=353409">Membangun Tim 2</a><br>4. Pembuatan dokumen proposal<br>5. Pembuatan dokumen kontrak<br>6. Manajemen Waktu<br>7. Anggaran dan harga<br>8. Simulasi Klien - Tahap 1<br>9. Simulasi Klien - Tahap 2<br>10. Penyusunan&nbsp;<a title="Creative Brief" href="https://elearning.telkomuniversity.ac.id/lms/mod/quiz/view.php?id=11564">Creative Brief</a><br>11. Mengelola Klien<br>12. Simulasi Klien - Tahap 3<br>13. Pengelolaan proses kreatif<br>14. Simulasi Klien - Tahap 4<br><br><b>VII. Rencana Pembelajaran Mata Kuliah Berbasis e-Learning (Navigasi Belajar Mandiri Secara Online Untuk Satu Mata Kuliah)</b></span><br>Dalam belajar mandiri secara online ini, mahasiswa disediakan konten materi berupa video pembelajaran dan lecture note dengan didukung dengan link-link eksternal. Untuk kebutuhan diskusi diberikan forum untuk tiap pertemuan agar mahasiswa dapat berdiskusi mengenai topik yang sedang dipelajarinya. Untuk mengevaluasi hasil pembelajaran diberikan tugas dan quiz sebagai indikator efektivitas pembelajaran secara online ini<br><br><b>VIII. Best Practice (Tips dan Trick) Mempelajari Mata Kuliah</b><br>1. Pelajari konten video dengan baik<br>2. Pelajari konten lecture note<br>3. Pelajari link eksternal<br>4. Aktif di forum diskusi<br><br><b>IX. Diberikan informasi terkait sertifikasi yang berkaitan</b><br>Tidak disediakan sertifikasi dalam mata kuliah ini&nbsp;<br><br><b>X. Dosen Pengampu:&nbsp;</b><br>Atria Nuraini Fadilla, S.Ds., M.Ds. / <span>Fauzi Adhika, S.Ds., MBA.</span></p>
+            <br>
+            <p><b>XI. Referensi Mata Kuliah</b><br>1. Terry Lee Stone, 2010, Managing the Design Process, Implementating Design, An Essential Manual for the Working Designer, Rockport Publisher.<br>2. Surianto Rustan, 2015, Bisnis Desain, Penerbit Lintas Kreasi Imaji<br>3. Terry Lee Stone, 2010, Managing the Design Process, Concept Development, An Essential Manual for the Working Designer, Rockport Publisher.<br></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-2x btn-sm btn-default disabled">Previous</button>
+          <button type="button" class="btn btn-2x btn-sm btn-default" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">#2 Lorem</h4>
+        </div>
+        <div class="modal-body ix-course-content">
+          <div class="content">
+            <h4 class="sectionname">
+              Ruang Lingkup Manajemen Proyek
+            </h4>
+            <div class="section_availability"></div>
+            <div class="summary">
+              <div class="no-overflow">
+                <div class="alert alert-danger">Konsep : Ketika klik <b>next/previous</b> scroll otomatis ke atas, jadi tidak stay di lokasi terakhir, untuk scriptnya maaf saya kurang tahu.</div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate a lectus eu aliquet. Mauris at massa ac lorem posuere eleifend id eget tellus. Vivamus blandit leo nec fringilla elementum.
+                <p>&nbsp;</p>
+                Duis id ullamcorper nunc. Donec eget molestie magna. Etiam mi ipsum, finibus et vulputate in, suscipit nec elit. In laoreet velit luctus libero congue, non convallis velit mattis. Aenean rhoncus, lorem quis sagittis sodales, nulla erat consequat sapien, quis ornare magna tellus id risus.
+                <p>&nbsp;</p>
+                <blockquote>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum adipisci sequi incidunt ratione quod dolores, rerum eius enim numquam, praesentium magni rem nostrum veniam aut cupiditate consequatur magnam quis sit.
+                </blockquote>
+                <p>&nbsp;</p>
+                <img src="../assets/img/3.jpg" alt="">
+                <p>&nbsp;</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, eaque! Neque at ratione atque odit rerum quos, a, amet animi repudiandae. Facere dicta ducimus dolorem, voluptate quibusdam error culpa illo.
+                <p>&nbsp;</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                </ul>
+                <p>&nbsp;</p>
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                </ol>
+                <p>&nbsp;</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, temporibus dolore aspernatur sit! Provident nulla, maxime, aperiam asperiores sint amet!
+                <hr>Laudantium suscipit exercitationem dolor cupiditate cumque enim tempore magni aliquid.
+                <p>&nbsp;</p>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+              </div>
+            </div>
+
+            <ul class="section img-text konten-materi">
+              <li class="activity divider" id="module-353391">
+                Aktivitas Materi
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="my-course-view-activity.html"> <i class="mdi mdi-comment-multiple"></i>Artikel</a>
+                <div class="completion-status selesai"><i class="mdi mdi-check"></i></div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="my-course-view-activity-video.html"> <i class="mdi mdi-video"></i>Video 1</a>
+                <div class="completion-status">
+                  <i class="mdi mdi-minus"></i>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="my-course-view-activity-video2.html"> <i class="mdi mdi-video"></i>Video 2</a>
+                <div class="completion-status">
+                  <i class="mdi mdi-minus"></i>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="my-course-view-activity-forum.html"> <i class="mdi mdi-forum"></i>Forum </a>
+                <div class="completion-status">
+                  <i class="mdi mdi-minus"></i>
+                </div>
+                <div class="contentafterlink">
+                  <div class="no-overflow padding-v1x padding-top-reset">
+                    Posting di forum sebagai pengganti presensi.
+                  </div>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="my-course-view-activity-task.html"> <i class="mdi mdi-format-list-checks"></i>Tugas </a>
+                <div class="completion-status selesai">
+                  <i class="mdi mdi-check"></i>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="section img-text konten-materi">
+              <li class="activity divider" id="module-353391">
+                External Links
+              </li>
+
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Project Manager</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Project Management For Designers</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Project Design in Project Management</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Manage Design Project</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <!-- <li class="activity url modtype_url " id="module-353396">
+                <div>
+                  <div class="mod-indent-outer w-100">
+                    <div class="mod-indent"></div>
+                    <div>
+                      <div class="activityinstance"><a class="aalink" onclick="window.open('https://lms.telkomuniversity.ac.id/mod/url/view.php?id=353396&amp;redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false;" href="https://lms.telkomuniversity.ac.id/mod/url/view.php?id=353396"><img src="https://lms.telkomuniversity.ac.id/theme/image.php/remui/url/1603818214/icon" class="iconlarge activityicon" alt="" role="presentation" aria-hidden="true"><span class="instancename">How To Manage Design Projects<span class="accesshide "> URL</span></span></a></div>
+                      <div class="actions">
+                        <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                          <div><input type="hidden" name="id" value="353396"><input type="hidden" name="sesskey" value="N480iQMQBm"><input type="hidden" name="modulename" value="How To Manage Design Projects"><input type="hidden" name="completionstate" value="0"><button class="btn btn-link" aria-live="assertive"><img class="icon " alt="Completed: How To Manage Design Projects. Select to mark as not complete." title="Completed: How To Manage Design Projects. Select to mark as not complete." src="https://lms.telkomuniversity.ac.id/theme/image.php/remui/core/1603818214/i/completion-manual-y"></button></div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+
+            <ul class="section img-text konten-materi">
+              <li class="activity divider" id="module-353391">
+                H5P Content
+              </li>
+
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Project Manager</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Project Management For Designers</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Project Design in Project Management</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+              <li class="activity chat modtype_chat" id="module-570773">
+                <a href="#"> <i class="mdi mdi-link-variant"></i> Manage Design Project</a>
+                <div class="completion-status selesai">
+                  <form method="post" action="https://lms.telkomuniversity.ac.id/course/togglecompletion.php" class="togglecompletion">
+                    <input type="checkbox" name="completionstate" value="0">
+                  </form>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-2x btn-sm btn-default" data-toggle="modal" data-target="#myModal" data-dismiss="modal">Previous</button>
+          <button type="button" class="btn btn-2x btn-sm btn-default disabled">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="bg-overlay1"></div>
+
+  <script src="part/part.js"></script>
+  <script src="../assets/js/ixlab.js"></script>
+  <script>
+    $(document).ready(function () {
+      var owl = $('.ix-featured');
+      owl.owlCarousel({
+        margin: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 1
+      });
+    });
+    $('.ix-navbar-menu ul li:contains("My Course")').addClass('active');
+  </script>
+
+</body>
+
+</html>
