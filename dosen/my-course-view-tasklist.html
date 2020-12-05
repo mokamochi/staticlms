@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Dashboard - Student - CeLOE.</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../assets/vendor/owl.carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/font/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style-comp.css">
+
+  <!-- Vendor JS -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+  <script src="../assets/vendor/trackpademulator/trackpademulator.min.js"></script>
+
+  <style>
+    .ix-bgcolor-overlay::before {
+      background: url(../assets/img/material-design-wp/13.png);
+      background-position: center;
+      background-attachment: fixed
+    }
+
+    .ix-bgcolor-overlay::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: ' ';
+      background: #000;
+      opacity: .35
+    }
+
+    .ix-content-container .ix-bgcolor-overlay::after {
+      opacity: .45
+    }
+
+    .ix-footer {
+      margin-bottom: 40px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="ix-course-progress">
+    <div class="progress">
+      <div class="progress-bar progress-bar-lms" role="progressbar" aria-valuenow="1.2" aria-valuemin="50" aria-valuemax="100" style="min-width:28.4%"></div>
+    </div>
+    <b>Week #8 <span style="margin:0 4px">-</span> Course Activity 28.4% / 100%</b>
+  </div>
+
+  <nav class="ix-navbar">
+  </nav>
+  <main>
+
+    <div class="ix-page-title">
+      <div class="ix-bgcolor-overlay"></div>
+      <div class="ix-container">
+        <div class="padding-v5x relative">
+          <a href="my-course-view.html" class="back-to-course" data-toggle="tooltip" data-placement="right" title="Back to course summary"><i class="mdi mdi-arrow-left"></i></a>
+          <h3>
+            Manajemen Proyek [FAA]
+          </h3>
+          <div class="additional-btn">
+            <a href="#" class="btn btn-round">UTS</a>
+            <a href="#" class="btn btn-round disabled ix-strike">UAS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ix-content-container">
+      <div class="ix-bgcolor-overlay"></div>
+
+      <div class="ix-breadcrumb">
+        <ol class="breadcrumb ix-container">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="my-course.html">My Course</a></li>
+          <li><a href="my-course-view.html">DEI4I2-MD-41-C_D</a></li>
+          <li class="active">Task Listing</li>
+        </ol>
+      </div>
+
+      <div class="ix-container ix-content--1side">
+        <div class="ix-box">
+
+          <div class="ix-content--fulltop margin-bot-reset">
+            <div class="ix-course-info">
+              <div class="row">
+                <div class="col-sm-9">
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="my-course-view-classmate.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x margin-lef-reset top-1x mdi-account-group"></i>Classmate</a>
+                    <a href="my-course-view-grade.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-star"></i>Score</a>
+                    <a href="my-course-view-tasklist.html" class="fs-0x btn btn-icon-left btn-5x btn-default active"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-clipboard-list"></i>Task (2)</a>
+                    <a href="#" title="WhatsApp Group" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x top-1x mdi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="ix-course-info--dosen" data-toggle="tooltip" data-placement="left" title="Fauzi Arif Adhika">
+                    <a href="../dosen/profil.html"><img src="../assets/img/pp2.jpg" class="img-wrap" alt=""></a>
+                    <span>
+                      <b style="display:block"><a href="../dosen/profil.html">Fauzi Arif Adhika</a></b>
+                      <small>Teacher</small> <br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ix-box--content">
+            <div class="ix-content--full-padding">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="dropdown">
+                    <a class="btn btn-icon-left btn-block btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="mdi mdi-3x margin-h2x margin-lef-reset top-4x mdi-sort"></i>
+                      Sort by Closest Due
+                    </a>
+                    <ul class="dropdown-menu fullx" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">A-Z</a></li>
+                      <li><a href="#">Closest Due</a></li>
+                      <li><a href="#">Recently Added</a></li>
+                      <li><a href="#">Submited</a></li>
+                      <li><a href="#">Overdue</a></li>
+                      <li><a href="#">Closed</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="bykeyword" placeholder="Search by Keyword ....">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ix-content--full ix-inter">
+              <h4 class="sectionname">
+                Task Listing (2)
+              </h4>
+              <div class="ix-custom-table">
+                <table>
+                  <tbody id="history_transaksi">
+
+                    <tr>
+                      <td><span class="badge badge-success" data-toggle="tooltip" data-title="Task Submited"><i class="mdi mdi-center mdi-1x mdi-check"></i></span></td>
+                      <td>
+                        <span>Tugas #5 <u>•</u> Membuat Deal Dengan Klien</span>
+                        <small>6 days 3 hours</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-success" data-toggle="tooltip" data-title="Task Submited"><i class="mdi mdi-center mdi-1x mdi-check"></i></span></td>
+                      <td>
+                        <span>Tugas #5 <u>•</u> Membuat Deal Dengan Klien</span>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-success" data-toggle="tooltip" data-title="Task Submited"><i class="mdi mdi-center mdi-1x mdi-check"></i></span></td>
+                      <td>
+                        <span>Tugas #5 <u>•</u> Membuat Deal Dengan Klien</span>
+                        <small><i>Overdue by 2 hours</i></small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-danger" data-toggle="tooltip" data-title="Task Overdue"><i class="mdi mdi-center mdi-1x mdi-clock-alert-outline" style="margin-top:-1px;"></i></span></td>
+                      <td>
+                        <span>Tugas #2 <u>•</u> Membuat Proposal #1</span>
+                        <small>Overdue by 2 hours</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">20 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge" data-toggle="tooltip" data-title="Task Not Submited"><i class="mdi mdi-center mdi-1x mdi-timer-outline"></i></span></td>
+                      <td>
+                        <span>Tugas #3 <u>•</u> Mereview Aplikasi Manajemen Proyek</span>
+                        <small>6 days 3 hours</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">27 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+                    <tr class="disabled">
+                      <td><span class="badge badge-black" data-toggle="tooltip" data-title="Task Closed"><i class="mdi mdi-center mdi-1x mdi-close"></i></span></td>
+                      <td>
+                        <span>Tugas #3 <u>•</u> Mereview Aplikasi Manajemen Proyek</span>
+                        <small>You're not submit this task</small>
+                      </td>
+                      <td>
+                        <span><b class="fw-1-5x">27 Nov 20 22:00 WIB</b></span>
+                      </td>
+                      <td><a href="my-course-view-activity-task.html" class="href-action"></a></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <nav>
+                <ul class="pagination">
+                  <li class="disabled"><span><span aria-hidden="true"><i class="mdi mdi-2x mdi-center mdi-chevron-left"></i></span></span></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#"><i class="mdi mdi-2x mdi-center mdi-chevron-right"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="ix-footer">
+  </footer>
+
+  <!-- Overlay -->
+  <div class="bg-overlay1"></div>
+
+  <script src="part/part.js"></script>
+  <script src="../assets/js/ixlab.js"></script>
+  <script>
+    $(document).ready(function () {
+      var owl = $('.ix-featured');
+      owl.owlCarousel({
+        margin: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 1
+      });
+    });
+    $('.ix-navbar-menu ul li:contains("My Course")').addClass('active');
+  </script>
+
+</body>
+
+</html>

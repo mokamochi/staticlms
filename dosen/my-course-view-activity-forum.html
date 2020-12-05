@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Dashboard - Student - CeLOE.</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../assets/vendor/owl.carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/font/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style-comp.css">
+
+  <!-- Vendor JS -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+  <script src="../assets/vendor/trackpademulator/trackpademulator.min.js"></script>
+
+  <style>
+    .ix-bgcolor-overlay::before {
+      background: url(../assets/img/material-design-wp/13.png);
+      background-position: center;
+      background-attachment: fixed
+    }
+
+    .ix-bgcolor-overlay::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: ' ';
+      background: #000;
+      opacity: .35
+    }
+
+    .ix-content-container .ix-bgcolor-overlay::after {
+      opacity: .45
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="ix-course-progress">
+    <div class="progress">
+      <div class="progress-bar progress-bar-lms" role="progressbar" aria-valuenow="1.2" aria-valuemin="50" aria-valuemax="100" style="min-width:28.4%"></div>
+    </div>
+    <b>Week #8 <span style="margin:0 4px">-</span> Course Activity 28.4% / 100%</b>
+  </div>
+
+  <nav class="ix-navbar">
+  </nav>
+  <main>
+
+    <div class="ix-page-title">
+      <div class="ix-bgcolor-overlay"></div>
+      <div class="ix-container">
+        <div class="padding-v5x relative">
+          <a href="my-course-view.html" class="back-to-course" data-toggle="tooltip" data-placement="right" title="Back to course summary"><i class="mdi mdi-arrow-left"></i></a>
+          <h3>
+            Manajemen Proyek [FAA]
+          </h3>
+          <div class="additional-btn">
+            <a href="#" class="btn btn-round">UTS</a>
+            <a href="#" class="btn btn-round disabled ix-strike">UAS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ix-content-container">
+      <div class="ix-bgcolor-overlay"></div>
+
+      <div class="ix-breadcrumb">
+        <ol class="breadcrumb ix-container">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="my-course.html">My Course</a></li>
+          <li><a href="my-course-view.html">DEI4I2-MD-41-C_D</a></li>
+          <li class="active">Pertemuan 1: Link to Class</li>
+        </ol>
+      </div>
+
+      <div class="ix-container ix-content--2side">
+        <div class="ix-box">
+
+          <div class="ix-content--fulltop margin-bot-reset">
+            <div class="ix-course-info">
+              <div class="row">
+                <div class="col-sm-9">
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="my-course-view-classmate.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x margin-lef-reset top-1x mdi-account-group"></i>Classmate</a>
+                    <a href="my-course-view-grade.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-star"></i>Score</a>
+                    <a href="my-course-view-tasklist.html" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x margin-h1x top-2x margin-lef-reset mdi-clipboard-list"></i>Task (2)</a>
+                    <a href="#" title="WhatsApp Group" class="fs-0x btn btn-icon-left btn-5x btn-default"><i class="mdi mdi-1x top-1x mdi-whatsapp"></i></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="ix-course-info--dosen" data-toggle="tooltip" data-placement="left" title="Fauzi Arif Adhika">
+                    <a href="../dosen/profil.html"><img src="../assets/img/pp2.jpg" class="img-wrap" alt=""></a>
+                    <span>
+                      <b style="display:block"><a href="../dosen/profil.html">Fauzi Arif Adhika</a></b>
+                      <small>Teacher</small> <br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ix-content--full-padding">
+            <b>#1 Ruang Lingkup Manajemen Proyek - Forum</b>
+            <div class="dropdown" style="margin-top:8px;">
+              <a class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Course Activity <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu ix-inter ix-course-week--activity" style="width:320px;" aria-labelledby="dropdownMenu1">
+              </ul>
+            </div>
+            <nav class="nextprev-course">
+              <ul class="pagination">
+                <li><a href="my-course-view-activity-video2.html" data-toggle="tooltip" data-placement="top" title="Previous"><i class="mdi mdi-2x mdi-center mdi-chevron-left"></i></a></li>
+                <li><a href="my-course-view-activity-task.html" data-toggle="tooltip" data-placement="top" title="Next"><i class="mdi mdi-2x mdi-center mdi-chevron-right"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="ix-content--full-padding">
+            <div class="btn btn-3x btn-red" data-toggle="modal" data-target="#myModal">Add Topic</div>
+            &nbsp;
+            <div class="dropdown" style="display:inline-block;">
+              <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" class="fs-0x btn btn-icon-left btn-4x btn-default"><i class="mdi mdi-1x top-1x mdi-cog" style="margin-right:8px;"></i> Activity Settings</a>
+              <ul class="dropdown-menu" style="padding:0;margin:0" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Highlight</a></li>
+                <li><a href="#">Hide</a></li>
+                <li><a href="#">Remove</a></li>
+                <li><a href="#">dsb</a></li>
+              </ul>
+            </div>
+            <br>
+            <br>
+            <div class="ix-custom-table ix-custom-table--forum ix-inter">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><span class="badge badge-default" data-toggle="tooltip" data-title="Favourite this" data-original-title="" title=""><i class="mdi mdi-center mdi-1x mdi-star-outline" style="margin-top:-1px;"></i></span></td>
+                    <td>
+                      <span><b class="fw-1-5x">Hal apa yang membuat Anda sebagai mahasiswa memiliki motivasi untuk belajar di kelas?</b></span>
+                      <small>by Fulan bin Fulan <u>•</u> 22 Sep 2020</small>
+                    </td>
+                    <td>
+                      <span>Last Reply by Fulan bin Fulan</span>
+                      <small>22 Sep 2020 <u>•</u> 0 Replies</small>
+                    </td>
+                    <td><a href="my-course-view-activity-forum-open.html" class="href-action"></a></td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge badge-info" data-toggle="tooltip" data-title="Favourite this" data-original-title="" title=""><i class="mdi mdi-center mdi-1x mdi-star" style="margin-top:-1px;"></i></span></td>
+                    <td>
+                      <span><b class="fw-1-5x">Absensi</b></span>
+                      <small>by Fulan bin Fulan <u>•</u> 22 Sep 2020</small>
+                    </td>
+                    <td>
+                      <span>Last Reply by Fulin bin Fulin</span>
+                      <small>22 Sep 2020 <u>•</u> 2 Replies</small>
+                    </td>
+                    <td><a href="my-course-view-activity-forum-open.html" class="href-action"></a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <nav>
+              <ul class="pagination">
+                <li class="disabled"><span><span aria-hidden="true"><i class="mdi mdi-2x mdi-center mdi-chevron-left"></i></span></span></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><span><span aria-hidden="true">...</span></span></li>
+                <li><a href="#">14</a></li>
+                <li><a href="#"><i class="mdi mdi-2x mdi-center mdi-chevron-right"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="ix-footer coursezzz">
+  </footer>
+
+
+  <!-- Overlay -->
+  <div class="bg-overlay1"></div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Add Topic</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Judul">
+            </div>
+            <div class="form-group">
+              <img src="toolbar.png" alt="">
+              <textarea name="" id="" class="form-control" placeholder="Isi" cols="30" rows="10"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"><span class="custom-mark"></span> Subscribe my Post
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-3x lh-1x btn-default" data-dismiss="modal">Batal</button> &nbsp;
+          <button type="button" class="btn btn-solid btn-3x lh-1x btn-solid-red">Post to Forum</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <script src="part/part.js"></script>
+  <script src="../assets/js/ixlab.js"></script>
+  <script>
+    $(document).ready(function () {
+      var owl = $('.ix-featured');
+      owl.owlCarousel({
+        margin: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 1
+      });
+    });
+    $('.ix-navbar-menu ul li:contains("My Course")').addClass('active');
+    $('.ix-course-week--activity li:contains("Forum")').addClass('active');
+  </script>
+
+
+</body>
+
+</html>
