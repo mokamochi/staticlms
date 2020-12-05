@@ -175,7 +175,7 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-page-title .breadcrumb a:hover{text-decoration:underline}
 .ix-page-title .ix-container > div{padding-left:40px;padding-right:158px}
 .ix-page-title .back-to-course{color:#fff;display:block;font-size:24px;height:24px;line-height:0;position:absolute;left:2px;margin-top:-1px}
-.ix-page-title .additional-btn{position:absolute;right:0;top:50%;transform:translateY(-50%);text-align:right;z-index:999}
+.ix-page-title .additional-btn{position:absolute;right:0;top:50%;transform:translateY(-50%);text-align:right;z-index:999;display:none}
 .ix-page-title .additional-btn a{height:32px;line-height:28px;padding:0 16px;background-color:transparent;border:2px solid #fff!important;color:#fff;letter-spacing:1px;font-weight:500;margin-left:8px;min-width:48px}
 .ix-page-title .additional-btn a:hover{background-color:#fff;color:#A12520}
 
@@ -303,13 +303,15 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-course-week li:nth-child(6) a::before{content:'5'}
 .ix-course-week li:nth-child(7) a::before{content:'6'}
 .ix-course-week li:nth-child(8) a::before{content:'7'}
-.ix-course-week li:nth-child(9) a::before{content:'8'}
-.ix-course-week li:nth-child(10) a::before{content:'9'}
-.ix-course-week li:nth-child(11) a::before{content:'10'}
-.ix-course-week li:nth-child(12) a::before{content:'11'}
-.ix-course-week li:nth-child(13) a::before{content:'12'}
-.ix-course-week li:nth-child(14) a::before{content:'13'}
-.ix-course-week li:nth-child(15) a::before{content:'14'}
+.ix-course-week li:nth-child(9) a::before{content:'#'}
+.ix-course-week li:nth-child(10) a::before{content:'8'}
+.ix-course-week li:nth-child(11) a::before{content:'9'}
+.ix-course-week li:nth-child(12) a::before{content:'10'}
+.ix-course-week li:nth-child(13) a::before{content:'11'}
+.ix-course-week li:nth-child(14) a::before{content:'12'}
+.ix-course-week li:nth-child(15) a::before{content:'13'}
+.ix-course-week li:nth-child(16) a::before{content:'14'}
+.ix-course-week li:nth-child(17) a::before{content:'$'}
 .ix-week--pertemuan-aktivitas{margin:0 -40px;margin-bottom:16px;padding:0 40px;padding-bottom:20px;border-bottom:4px solid #fbfbfb;font-weight:bold}
 .ix-course-week--activity li a{position:relative;padding:12px 16px;padding-left:42px}
 .ix-course-week--activity li .completion-status{position:absolute;right:-40px;top:12px;opacity:.25;margin:0!important;display:block;width:40px;text-align:center}
@@ -341,13 +343,17 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-course-content ul.konten-materi li.activity:nth-child(1){border:0}
 .ix-course-content ul.konten-materi li.activity:nth-child(2){border:0;margin-top:0}
 .ix-course-content ul.konten-materi li.activity .mdi{font-size:20px;line-height:0;margin:0 4px}
-.ix-course-content ul.konten-materi li.activity a{position:relative;display:block;padding:10px;padding-left:42px;border-radius:6px}
-.ix-course-content ul.konten-materi li.activity a:hover{background-color:rgba(0,0,0,.035)}
-.ix-course-content ul.konten-materi li.activity a .mdi{position:absolute;left:12px;top:10px}
+.ix-course-content ul.konten-materi li.activity > a{position:relative;display:block;padding:10px;padding-left:42px;border-radius:6px}
+.ix-course-content ul.konten-materi li.activity > a:hover{background-color:rgba(0,0,0,.035)}
+.ix-course-content ul.konten-materi li.activity > a .mdi{position:absolute;left:12px;top:10px}
 .ix-course-content ul.konten-materi li.activity .completion-status{position:absolute;right:12px;top:14px;opacity:.25}
+.ix-course-content ul.konten-materi li.activity .completion-status > a{padding:6px 4px 2px;border:1px solid #ddd;border-radius:500px}
 .ix-course-content ul.konten-materi li.activity .completion-status.selesai{color:#66BB6A;opacity:1}
 .ix-course-content ul.konten-materi li.activity .completion-status form{position:relative;top:-1px}
 .ix-course-content ul.konten-materi li.activity.divider{font-weight:500;padding:16px 40px;border-top:4px solid #fbfbfb;margin:0 -40px -4px}
+.modal-body.ix-course-content ul.konten-materi li.activity.divider{padding:16px 40px 16px 52px}
+.modal-body.ix-course-content ul.konten-materi::before{position:absolute;top:29px;left:-16px}
+.modal-body.ix-course-content ul.konten-materi::after{left:-6px}
 .ix-course-content ul.konten-materi li.activity .contentafterlink{font-size:95%;padding:0px 32px 0 42px}
 .ix-course-progress{background-color:#A12520;position:fixed;bottom:0;left:0;right:0;box-shadow:0 -4px 25px -3px rgba(0,0,0,.075);height:44px;line-height:43px;z-index:9;text-align:center;font-size:12px;color:#fff}
 .ix-course-progress b{font-weight:500}
@@ -356,6 +362,7 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-course-progress::after{display:block;clear:both;content:' '}
 
 /* Info Matkul */
+.ix-course-info .col-sm-3{display:none}
 .ix-course-info--dosen{height:40px}
 .ix-course-info--dosen > a{display:block;height:40px;width:40px;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px -2px rgba(0,0,0,.15);float:left;margin-right:12px;}
 .ix-course-info--dosen b{padding-top:1px}
@@ -374,7 +381,7 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-table-classmate tr td:nth-child(2) span{position:relative;display:block;font-weight:normal;padding-top:3px;font-size:12px}
 .ix-table-classmate tr td:nth-child(2) a{display:inline-block;padding:4px 0 0;font-weight:bold}
 .ix-table-classmate tr td:nth-child(1) .ix-classmate-pp{width:48px;height:48px;border-radius:80px;position:absolute;left:0;top:0;overflow:hidden}
-.ix-table-classmate tr td:nth-child(3){position:absolute;right:20px;top:50%;transform:translateY(-50%);width:auto!important;text-align:right;font-size:12px;opacity:.5;font-style:italic}
+.ix-table-classmate tr td:nth-child(3){position:absolute;right:20px;top:50%;transform:translateY(-50%);width:auto!important;text-align:right;font-size:12px;font-style:italic}
 
 /* Custom 1 - Box Badge */
 .ix-custom-table table{display:block}
@@ -441,3 +448,11 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-login-section::-webkit-scrollbar-thumb{background:#9e9e9e}
 .ix-login-section::-webkit-scrollbar-thumb:hover{background:#ED1B24}
 .ix-login-section .login-logo img{width:160px}
+
+/* Grid */
+.no-imgss{display:flex;flex-wrap:wrap;justify-content:left}
+.no-imgss .ix-grid-item ul{height:100%;display:block}
+.no-imgss .ix-grid-item li{height:100%;display:flex;flex-wrap:wrap;justify-content:left}
+.no-imgss .ix-grid-item li a{height:100%;width:100%;display:block;display:block;border:1px solid #ccc;height:auto!important;padding:12px}
+.no-imgss .ix-grid-item.xxuts li a{border-width:2px}
+.no-imgss .ix-grid-item li a:hover{border-color: #A12520}

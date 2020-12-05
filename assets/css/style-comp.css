@@ -294,6 +294,7 @@ img.img-wrap{width:100%;height:100%;object-fit:cover;object-position:center}
 .label{padding:3px 6px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-padding-before:4px;-webkit-touch-callout:none;-khtml-user-select:none}
 .badge{padding:3px 06px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#555;border-radius:4px;background-color:#d9e1ed;-webkit-touch-callout:none;-khtml-user-select:none}
 .badge,.label{font-size:11px;font-weight:500;display:inline;margin:0!important;text-align:center;border-radius:6px}
+.badge-pill,.label-pill{border-radius:200px}
 .badge:hover,.label:hover{box-shadow:inset 0 0 500px rgba(0,0,0,.1)}
 .badge-circle{line-height:20px;display:inline-block;width:19px;height:19px;margin:0!important;padding:0}
 .badge-default,.label-default{color:#555!important;background-color:#d9e1ed!important}
