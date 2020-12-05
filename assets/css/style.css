@@ -362,7 +362,6 @@ a:not([href]):not([tabindex]):hover{color:#A12520}
 .ix-course-progress::after{display:block;clear:both;content:' '}
 
 /* Info Matkul */
-.ix-course-info .col-sm-3{display:none}
 .ix-course-info--dosen{height:40px}
 .ix-course-info--dosen > a{display:block;height:40px;width:40px;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px -2px rgba(0,0,0,.15);float:left;margin-right:12px;}
 .ix-course-info--dosen b{padding-top:1px}
